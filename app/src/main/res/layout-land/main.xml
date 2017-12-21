@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/editTextPortData"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:clickable="false"
+            android:gravity="center_horizontal"
+            android:longClickable="false"
+            android:textColor="#fe0000"
+            android:textSize="150sp" android:editable="false"
+            android:background="@drawable/edittextstyle"/>
+
+    </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutTooLPort"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Select Serialport"
+                            android:id="@+id/textView" />
+                        <Spinner
+                            android:id="@+id/SpinnerPort"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="right"
+                            android:visibility="visible"
+                            android:layout_gravity="center_horizontal" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Select Baudrate"
+                            android:id="@+id/textViewBaudrate" />
+
+                        <Spinner
+                            android:id="@+id/SpinnerBaudrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:visibility="visible"
+                            android:layout_gravity="center_horizontal" />
+
+                    </TableRow>
+                </TableLayout>
+                <LinearLayout
+                    android:id="@+id/LinearLayoutTooLPort1"
+                    android:layout_width="match_parent"
+                    android:layout_height="222dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                    android:layout_weight="0.19">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonPort"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:text="ToggleButton"
+                        android:checked="false"
+                        android:nestedScrollingEnabled="true"
+                        android:layout_gravity="center_horizontal"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Clear"
+                            android:id="@+id/buttonClear"
+                            android:layout_column="1"/>
+                    </TableRow>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+</LinearLayout>
